@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "name": "Get VPN servers list",
+      "method": "GET",
+      "path": "/?action=servers",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Connect to VPN server",
+      "method": "POST",
+      "path": "/?action=connect",
+      "body": {
+        "serverId": "1"
+      },
+      "expectedStatus": 200
+    }
+  ]
+}
